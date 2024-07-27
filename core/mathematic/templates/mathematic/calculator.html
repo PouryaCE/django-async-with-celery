@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block title %}calculator{% endblock title %}
+
+
+{% block content %}
+<center><h1>This is Calculator page</h1></center>
+<hr>
+<center>
+    <h3>
+        please enter two numbers and then select an operation
+    </h3>
+    <br><br><br>
+    <form action="" method="post" style="width: 50%;">
+    {% csrf_token %}
+    {{ form }}
+    <input type="submit" value="Calculate Please" class="btn btn-primary">
+</form></center>
+{% endblock content %}
