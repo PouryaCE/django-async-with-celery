@@ -59,10 +59,10 @@ class CalculatorView(View):
                     status = task.status,
                     result = task.result
                 )
-            messages.success(request, "your task successfully recieved and we will process it")
+            messages.success(request, "your task successfully recieved and we will process it", 'success')
             return redirect('mathematic:index')
         else:
-            messages.error(request, "something went wrong please try again")
+            messages.error(request, "something went wrong please try again", 'error')
             return redirect('mathematic:calculator')
 
 

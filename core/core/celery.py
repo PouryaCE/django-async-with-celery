@@ -3,6 +3,7 @@ import os
 from celery import Celery
 import logging
 from . import settings
+from celery.schedules import crontab
 
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'core.settings')
 
@@ -10,6 +11,14 @@ app = Celery('core')
 
 app.config_from_object('django.conf:settings', namespace='CELERY')
 app.autodiscover_tasks(lambda: settings.INSTALLED_APPS)
+
+app.conf.beat_schedule = {
+    'periodic-task-for-update-status': {
+        'task': 'mathematic.worker.periodic_task_for_update_status',
+        'schedule': crontab(minute='*/1'),  # Runs every minute
+    },
+}
+
 
 @app.task(bind=True)
 def debug_task(self):

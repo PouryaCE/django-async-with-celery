@@ -17,8 +17,11 @@
               login / logout
             </a>
             <ul class="dropdown-menu">
+              {% if not request.user.is_authenticated %}
               <li><a class="dropdown-item" href="{% url 'accounts:login'%}">login</a></li>
+              {% else %}
               <li><a class="dropdown-item" href="{% url 'accounts:logout' %}">logout</a></li>
+              {% endif %}
               <li><hr class="dropdown-divider"></li>
               <li><a class="dropdown-item" href="{% url 'accounts:register' %}">register</a></li>
             </ul>

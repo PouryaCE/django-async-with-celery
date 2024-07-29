@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'mathematic.apps.MathematicConfig',
     'accounts.apps.AccountsConfig',
     'task.apps.TaskConfig',
+    'django_celery_beat',
 ]
 
 MIDDLEWARE = [
