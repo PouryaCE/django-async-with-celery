@@ -3,7 +3,9 @@ from django.views import View
 from .forms import CalculatorForm
 from django.contrib import messages
 from .worker import add_numbers, divide_numbers, minus_numbers, multiple_numbers
+from task.models import UserTask
 # Create your views here.
+
 
 
 class CalculatorView(View):
@@ -22,13 +24,41 @@ class CalculatorView(View):
             second_number = cd.get("number2")
             operation = cd.get("operation")
             if operation == "z":
-                multiple_numbers.delay(first_number, second_number)
+                task = multiple_numbers.delay(first_number, second_number)
+                UserTask.objects.create(
+                    user = request.user,
+                    task_id = task.id,
+                    task_type = operation,
+                    status = task.status,
+                    result = task.result
+                )
             elif operation == "j":
-                add_numbers.delay(first_number, second_number)
+                task = add_numbers.delay(first_number, second_number)
+                UserTask.objects.create(
+                    user = request.user,
+                    task_id = task.id,
+                    task_type = operation,
+                    status = task.status,
+                    result = task.result
+                )
             elif operation == "t":
-                divide_numbers.delay(first_number, second_number)
+                task = divide_numbers.delay(first_number, second_number)
+                UserTask.objects.create(
+                    user = request.user,
+                    task_id = task.id,
+                    task_type = operation,
+                    status = task.status,
+                    result = task.result
+                )
             elif operation == "m":
-                minus_numbers.delay(first_number, second_number)
+                task = minus_numbers.delay(first_number, second_number)
+                UserTask.objects.create(
+                    user = request.user,
+                    task_id = task.id,
+                    task_type = operation,
+                    status = task.status,
+                    result = task.result
+                )
             messages.success(request, "your task successfully recieved and we will process it")
             return redirect('mathematic:index')
         else:

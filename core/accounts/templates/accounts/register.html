@@ -1,0 +1,12 @@
+<!-- templates/registration/register.html -->
+{% extends "base.html" %}
+
+{% block content %}
+  <center><h2>Register Page</h2></center>
+  <hr>
+  <form method="post" style="width: 50%; margin-left: 500px;">
+    {{ form.as_p }}
+    {% csrf_token %}
+    <center><input type="submit" value="register" class="btn btn-info"></center>
+  </form>
+{% endblock %}

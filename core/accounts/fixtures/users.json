@@ -1,0 +1,143 @@
+[
+    {
+      "model": "auth.user",
+      "pk": 10,
+      "fields": {
+        "username": "zahra",
+        "password": "pbkdf2_sha256$390000$V6Ws4BZ7hxozv9CB1mfgIf$Ki+YkDf3m9ZprltHoVsbo/E1EuNzZfF7DCVeJIQTZ8g=",
+        "email": "zahra@example.com",
+        "is_staff": false,
+        "is_superuser": false,
+        "is_active": true,
+        "first_name": "Zahra",
+        "last_name": "Ahmadi"
+      }
+    },
+    {
+      "model": "auth.user",
+      "pk": 11,
+      "fields": {
+        "username": "mohammad",
+        "password": "pbkdf2_sha256$390000$V6Ws4BZ7hxozv9CB1mfgIf$Ki+YkDf3m9ZprltHoVsbo/E1EuNzZfF7DCVeJIQTZ8g=",
+        "email": "mohammad@example.com",
+        "is_staff": false,
+        "is_superuser": false,
+        "is_active": true,
+        "first_name": "Mohammad",
+        "last_name": "Hosseini"
+      }
+    },
+    {
+      "model": "auth.user",
+      "pk": 12,
+      "fields": {
+        "username": "ali",
+        "password": "pbkdf2_sha256$390000$V6Ws4BZ7hxozv9CB1mfgIf$Ki+YkDf3m9ZprltHoVsbo/E1EuNzZfF7DCVeJIQTZ8g=",
+        "email": "ali@example.com",
+        "is_staff": false,
+        "is_superuser": false,
+        "is_active": true,
+        "first_name": "Ali",
+        "last_name": "Karimi"
+      }
+    },
+    {
+      "model": "auth.user",
+      "pk": 13,
+      "fields": {
+        "username": "fatemeh",
+        "password": "pbkdf2_sha256$390000$V6Ws4BZ7hxozv9CB1mfgIf$Ki+YkDf3m9ZprltHoVsbo/E1EuNzZfF7DCVeJIQTZ8g=",
+        "email": "fatemeh@example.com",
+        "is_staff": false,
+        "is_superuser": false,
+        "is_active": true,
+        "first_name": "Fatemeh",
+        "last_name": "Nazari"
+      }
+    },
+    {
+      "model": "auth.user",
+      "pk": 14,
+      "fields": {
+        "username": "hossein",
+        "password": "pbkdf2_sha256$390000$V6Ws4BZ7hxozv9CB1mfgIf$Ki+YkDf3m9ZprltHoVsbo/E1EuNzZfF7DCVeJIQTZ8g=",
+        "email": "hossein@example.com",
+        "is_staff": false,
+        "is_superuser": false,
+        "is_active": true,
+        "first_name": "Hossein",
+        "last_name": "Rasouli"
+      }
+    },
+    {
+      "model": "auth.user",
+      "pk": 15,
+      "fields": {
+        "username": "mahdi",
+        "password": "pbkdf2_sha256$390000$V6Ws4BZ7hxozv9CB1mfgIf$Ki+YkDf3m9ZprltHoVsbo/E1EuNzZfF7DCVeJIQTZ8g=",
+        "email": "mahdi@example.com",
+        "is_staff": false,
+        "is_superuser": false,
+        "is_active": true,
+        "first_name": "Mahdi",
+        "last_name": "Gholami"
+      }
+    },
+    {
+      "model": "auth.user",
+      "pk": 16,
+      "fields": {
+        "username": "maryam",
+        "password": "pbkdf2_sha256$390000$V6Ws4BZ7hxozv9CB1mfgIf$Ki+YkDf3m9ZprltHoVsbo/E1EuNzZfF7DCVeJIQTZ8g=",
+        "email": "maryam@example.com",
+        "is_staff": false,
+        "is_superuser": false,
+        "is_active": true,
+        "first_name": "Maryam",
+        "last_name": "Jafari"
+      }
+    },
+    {
+      "model": "auth.user",
+      "pk": 17,
+      "fields": {
+        "username": "reza",
+        "password": "pbkdf2_sha256$390000$V6Ws4BZ7hxozv9CB1mfgIf$Ki+YkDf3m9ZprltHoVsbo/E1EuNzZfF7DCVeJIQTZ8g=",
+        "email": "reza@example.com",
+        "is_staff": false,
+        "is_superuser": false,
+        "is_active": true,
+        "first_name": "Reza",
+        "last_name": "Soleimani"
+      }
+    },
+    {
+      "model": "auth.user",
+      "pk": 18,
+      "fields": {
+        "username": "ahmad",
+        "password": "pbkdf2_sha256$390000$V6Ws4BZ7hxozv9CB1mfgIf$Ki+YkDf3m9ZprltHoVsbo/E1EuNzZfF7DCVeJIQTZ8g=",
+        "email": "ahmad@example.com",
+        "is_staff": false,
+        "is_superuser": false,
+        "is_active": true,
+        "first_name": "Ahmad",
+        "last_name": "Taheri"
+      }
+    },
+    {
+      "model": "auth.user",
+      "pk": 19,
+      "fields": {
+        "username": "narges",
+        "password": "pbkdf2_sha256$390000$V6Ws4BZ7hxozv9CB1mfgIf$Ki+YkDf3m9ZprltHoVsbo/E1EuNzZfF7DCVeJIQTZ8g=",
+        "email": "narges@example.com",
+        "is_staff": false,
+        "is_superuser": false,
+        "is_active": true,
+        "first_name": "Narges",
+        "last_name": "Ebrahimi"
+      }
+    }
+  ]
+  
