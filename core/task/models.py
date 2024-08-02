@@ -1,6 +1,7 @@
 from django.db import models
 from django.contrib.auth.models import User
 
+
 class UserTask(models.Model):
     task_choices = (
         ('j', 'plus'),
